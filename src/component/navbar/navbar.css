@@ -1,0 +1,288 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    li{
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:focus {
+        color: rgb(167, 166, 166);
+      }
+    }
+  }
+}
+.home {
+  display: flex;
+  justify-content: space-around;
+  .header {
+    margin-left: -20px;
+    margin-top: 90px;
+    height: fit-content;
+    border-left: 8px solid rgb(255, 57, 57);
+    padding-left: 20px;
+    .username {
+      width: 30%;
+      margin-top: -16px;
+      font-size: 60px;
+      text-shadow: 4px 4px 8px rgb(111, 116, 116);
+      .tag {
+        color: white;
+      }
+    }
+    .yes {
+      width: 60%;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.bitmoji {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  top: 9em;
+  right: 12em;
+  border-radius: 50px;
+  border: 2px solid cyan;
+  padding: 8px;
+  box-shadow: 2px 2px 18px #2c2c2c;
+}
+.skill {
+  position: absolute;
+  bottom: 3em;
+  left: 10em;
+  img {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    box-shadow: 5px 5px 8px rgb(110, 110, 110);
+    border-radius: 20px;
+    margin: 0px 10px;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.3s ease-out;
+      scale: 125%;
+      box-shadow: 8px 8px 16px rgb(83, 83, 83);
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  bottom: 1.8em;
+  left: 70%;
+  font-size: 30px;
+  width: 10%;
+  justify-content: space-between;
+  color: white;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  i {
+    text-shadow: 5px 4px 12px rgb(61, 61, 61);
+    cursor: pointer;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      color: black;
+      scale: 125%;
+    }
+  }
+}
+
+span {
+  height: fit-content;
+
+}
+.contact-form {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background: none;
+  backdrop-filter: brightness(0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(66, 64, 64);
+  color: white;
+}
+.con{
+  text-align: center;
+  margin-top: 80px;
+  color: black;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background: none;
+  color: rgb(48, 47, 47);
+  transition: border-color 0.3s;
+  font-weight: 700;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3f3f3f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #262627;
+}
+/* About.css */
+.about {
+  max-width: 800px; /* Limit the width of the container */
+  margin: 36px auto; /* Center the container */
+  padding: 2px 30px; /* Add padding inside the container */
+  border-radius: 8px; /* Rounded corners */
+  font-family: Arial, sans-serif; /* Font for the text */
+  font-weight: 600;
+  backdrop-filter: brightness(0.9);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-div {
+  background-image: url('../../static/4683.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 140vh;
+}
+.about-header h1 {
+  text-align: center; /* Center the header text */
+  color: black; /* Header text color */
+}
+.about-header {
+  border-bottom: 2px solid black;
+}
+
+.bio h2,
+.achievements h2,
+h2 {
+  color: white; /* Color for section headers */
+  margin-top: 20px; /* Space above the headers */
+}
+
+.bio p,
+.achievements ul li,
+section p {
+  color: black; /* Paragraph text color */
+  line-height: 1.6; /* Improve readability */
+  text-align: justify;
+}
+
+.achievements ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.developer {
+  padding: 8px; /* Padding for list items */
+  margin: 5px 0; /* Space between list items */
+  border-radius: 4px; /* Rounded corners for list items */
+  list-style:decimal-leading-zero;
+  position: relative;
+  left: 40px;
+}
+  /* src/ProductCard.css */
+.product-card {
+  border: 1px solid #8d8c8c;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 2px 2px 18px #000;
+  transition: transform 0.2s;
+  background-color: transparent;
+  backdrop-filter: brightness(0.9);
+  width: 20%;
+  position: relative;
+  right: -20%;
+  bottom: -100px;
+  margin: 0px 50px;
+  color: white;
+  font-weight: 700;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  margin: 12px 0;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.add-to-cart {
+  background-color: rgb(61, 60, 60);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width:50%;
+}
+
+.add-to-cart:hover {
+  background-color: #363636;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
